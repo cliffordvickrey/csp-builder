@@ -125,6 +125,14 @@ class CSPBuilder
     }
 
     /**
+     * @return array The policies array as is.
+     */
+    public function getPolicies(): array
+    {
+        return $this->policies;
+    }
+
+    /**
      * Compile the current policies into a CSP header
      *
      * @return string
